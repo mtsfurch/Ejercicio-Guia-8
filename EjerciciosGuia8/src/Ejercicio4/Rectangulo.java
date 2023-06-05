@@ -47,14 +47,12 @@ public class Rectangulo {
      *
      * @return x
      */
-    public Rectangulo crearRec() {
-        Rectangulo x = new Rectangulo();
+    public void crearRec() {
         Scanner read = new Scanner(System.in);
         System.out.println("Ingrese base del rectangulo");
-        x.setBase(read.nextInt());
+        setBase(read.nextInt());
         System.out.println("Ingrese altura del rectangulo");
-        x.setAltura(read.nextInt());
-        return x;
+        setAltura(read.nextInt());
     }
 
     /**
