@@ -33,8 +33,24 @@ public class Ejercicio10 {
             A[i] = Math.random() * 100;
         }
 
-//        Ordena A de menor a mayor
+//       Ordena A de menor a mayor
         Arrays.sort(A, 0, 50);
+       
+        /*
+        Version sin utilizar funcion Java de ordenar de menor a mayor
+        
+        for (int i = 0; i < 50; i++) {
+            double aux=A[i];
+            double aux1=0;
+            for (int j = i; j < 50; j++) {
+                if(aux>A[j]){
+                    aux1=aux;
+                    aux=A[j];
+                    A[j]=aux1;
+                }
+            }A[i]=aux;
+        } */
+        
 //        Inicializa los 10 primeros de B copiando los de A
         System.arraycopy(A, 0, B, 0, 10);
         

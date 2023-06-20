@@ -56,9 +56,13 @@ public class Cadena {
         System.out.println("Se encontraron "+contador+" vocales");
 }
     public void invertirFrase(){
+        String frase2 = "";
         for (int i = longitud; i > 0; i--) {
-            System.out.print(frase.substring(i-1, i));
+          //  System.out.print(frase.substring(i-1, i));
+           frase2 = frase2+frase.substring(i-1, i);
+            
         }
+        System.out.println(frase2);
     }
     
     public void vecesRepetido(String letra){
